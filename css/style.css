@@ -16,9 +16,6 @@
     --poppins: 'Poppins', sans-serif;
 }
 
-.container {
-    width: 100%;
-}
 
 a {
     text-decoration: none;
@@ -99,6 +96,11 @@ nav>.top-nav>.menu>ul>li:hover ul {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
+
+}
+
+.left-containt {
+    width: 70%;
 }
 
 .top-contant>.left-containt h1 {
@@ -269,7 +271,7 @@ nav>.top-nav>.menu>ul>li:hover ul {
 }
 
 .animation1 {
-    animation          : swing1 6s infinite;
+    animation          : swing1 4s infinite;
     animation-direction: alternate;
 }
 
@@ -284,7 +286,7 @@ nav>.top-nav>.menu>ul>li:hover ul {
 }
 
 .animation2 {
-    animation          : swing 4s infinite;
+    animation          : swing 6s infinite;
     animation-direction: alternate;
 }
 
@@ -294,7 +296,7 @@ nav>.top-nav>.menu>ul>li:hover ul {
     }
 
     100% {
-        transform: translate(4px, 10px);
+        transform: translate(15px, 10px);
     }
 }
 
@@ -318,47 +320,53 @@ nav>.top-nav>.menu>ul>li:hover ul {
 /* service */
 .service {
     padding: 0px 90px;
-    margin: 95px 0;
+    margin : 95px 0;
 }
+
 .service h1 {
-    font-family: var(--aller);
+    font-family   : var(--aller);
     text-transform: uppercase;
-    font-size: 29px;
-    margin-bottom: 15px;
-    color: var(--black);
+    font-size     : 29px;
+    margin-bottom : 15px;
+    color         : var(--black);
 }
-.service>.owl-carousel .item {
-    width : 249px;
-    height: 296px;
+
+.service>.service_ol .item {
+    width   : 249px;
+    height  : 296px;
     position: relative;
 }
-.service>.owl-carousel .item .text-con {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    font-family: var(--poppins);
-    color: var(--white);
-    width: 194px;
-    height: 250px;
+
+.service>.service_ol .item .text-con {
+    position        : absolute;
+    bottom          : 30px;
+    left            : 20px;
+    font-family     : var(--poppins);
+    color           : var(--white);
+    width           : 194px;
+    height          : 250px;
     background-color: var(--black);
-    border-radius: 10px;
-    opacity: 0.6;
+    border-radius   : 10px;
+    opacity         : 0.6;
 }
-.service>.owl-carousel .item .text-con h3 {
-    top: 177px;
-    position: absolute;
-    left: 7px;
+
+.service>.service_ol .item .text-con h3 {
+    top      : 177px;
+    position : absolute;
+    left     : 7px;
     font-size: 13px;
 }
-.service>.owl-carousel .item .text-con p {
-    top: 200px;
-    position: absolute;
-    left: 7px;
+
+.service>.service_ol .item .text-con p {
+    top      : 200px;
+    position : absolute;
+    left     : 7px;
     font-size: 13px;
 }
-.service>.owl-carousel .item img {
-    width: 100%;
-    height: 100%;
+
+.service>.service_ol .item img {
+    width     : 100%;
+    height    : 100%;
     object-fit: contain;
 
 }
@@ -369,18 +377,301 @@ nav>.top-nav>.menu>ul>li:hover ul {
 }
 
 .owl-dot {
-    height: 10px !important;
-    width: 40px !important;
+    height       : 10px !important;
+    width        : 40px !important;
     border-radius: 25px !important;
-    cursor: pointer !important;
-    outline: none !important;
-    margin: 0 5px !important;
-    border: 2px solid var(--main) !important;
+    cursor       : pointer !important;
+    outline      : none !important;
+    margin       : 0 5px !important;
+    border       : 2px solid var(--main) !important;
 }
-.owl-theme .owl-dots .owl-dot span{
+
+.owl-theme .owl-dots .owl-dot span {
     display: none;
 }
+
 .owl-dot:hover,
-.owl-dot.active{
+.owl-dot.active {
     background: var(--main) !important;
+}
+
+.details_ol .item .main_dt {
+    width : 100%;
+    height: auto;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    display: none;
+}
+
+.new_details {
+    position: relative;
+}
+
+.text_dt {
+    position: absolute;
+    top     : 256px;
+    right   : 165px;
+}
+
+.text_dt h1 {
+    font-family   : var(--aller);
+    text-transform: uppercase;
+    color         : var(--main);
+}
+
+.text_dt button {
+    background : #F8D2D7;
+    border     : none;
+    display    : flex;
+    align-items: center;
+    margin-top : 28px;
+    cursor     : pointer;
+    box-shadow : 3px 4px 13px 6px rgb(0 0 0 / 20%);
+    padding    : 10px 16px;
+}
+
+
+.text_dt button img {
+    width       : 30px !important;
+    margin-right: 6px;
+}
+
+.ani_det {
+    position: absolute;
+}
+
+.ani_det .dt-an-1 {
+    width   : 60px;
+    top     : -340px;
+    left    : 509px;
+    position: absolute;
+}
+
+.ani_det .dt-an-2 {
+    width   : 60px;
+    position: absolute;
+    top     : -500px;
+    left    : 329px;
+}
+
+.ani_det .dt-an-3 {
+    width   : 60px;
+    top     : -329px;
+    position: absolute;
+    left    : 72px;
+}
+
+.one_new_ser {
+    padding: 0px 100px;
+    margin : 100px 0;
+
+}
+
+.one_new_ser h1 {
+    font-family   : var(--aller);
+    color         : var(--black);
+    text-transform: uppercase;
+    margin-bottom : 10px;
+}
+
+.one_new_ser>.all_service {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+}
+
+.one_new_ser>.all_service>.icon_s {
+    width        : 125px;
+    height       : 125px;
+    margin       : 10px;
+    text-align   : center;
+    margin       : auto;
+    object-fit   : contain;
+    border       : 1px solid rgba(218, 30, 55, 0.21);
+    border-radius: 24px;
+    cursor       : pointer;
+}
+
+.one_new_ser>.all_service>.icon_s>img {
+    object-fit: contain;
+    width     : 100%;
+    height    : 100%;
+    padding   : 10px;
+
+}
+
+.one_new_ser>.all_service>.icon_s {
+    width        : 180px;
+    height       : 180px;
+    margin       : 10px;
+    text-align   : center;
+    margin       : auto;
+    object-fit   : contain;
+    border       : 1px solid rgba(218, 30, 55, 0.21);
+    border-radius: 24px;
+    cursor       : pointer;
+    padding-top  : 37px;
+    margin-bottom: 22px;
+    color        : #666666 !important;
+}
+
+.one_new_ser>.all_service>.icon_s:hover {
+    color: var(--main) !important;
+}
+
+.icon_s i {
+    font-size: 66px;
+}
+
+.icon_s p {
+    font-size  : 20px;
+    font-family: var(--poppins);
+    margin-top : 10px;
+}
+
+.text_dat h1 {
+    font-family   : var(--aller);
+    text-transform: uppercase;
+    color         : var(--main);
+    position      : absolute;
+    top           : 245px;
+    left          : 50px;
+    width         : 496px;
+    color         : var(--white);
+}
+
+.text_dat button {
+    background : var(--white);
+    border     : none;
+    display    : flex;
+    align-items: center;
+    margin-top : 28px;
+    cursor     : pointer;
+    box-shadow : 3px 4px 13px 6px rgb(0 0 0 / 20%);
+    padding    : 10px 16px;
+    position   : absolute;
+    top        : 362px;
+    left       : 55px;
+}
+
+.text_dat button img {
+    width       : 30px !important;
+    margin-right: 6px;
+}
+
+.ani_det {
+    position: absolute;
+}
+
+.ani_det .dt-an-1 {
+    width   : 60px;
+    top     : -389px;
+    left    : 509px;
+    position: absolute;
+}
+
+.ani_det .dt-an-2 {
+    width   : 60px;
+    position: absolute;
+    top     : -626px;
+    left    : 422px;
+}
+
+.ani_det .dt-an-3 {
+    width   : 60px;
+    top     : -329px;
+    position: absolute;
+    left    : 72px;
+}
+
+.text_dat button i {
+    margin-left  : 5px;
+    margin-bottom: 3px;
+    color        : #087E8B;
+}
+
+img.chat_list {
+    position: absolute;
+    top     : 402px;
+    right   : 614px;
+    width   : 183px;
+}
+
+.ani_dat .dt-an-1 {
+    position: absolute;
+    top     : 151px;
+    left    : 624px;
+}
+
+.ani_dat .dt-an-2 {
+    position: absolute;
+    top     : 210px;
+    right   : 140px;
+}
+
+.ani_dat .dt-an-3 {
+    position: absolute;
+    top     : 75px;
+    right   : 453px;
+}
+
+.ani_dat .dt-an-4 {
+    position: absolute;
+    right   : 106px;
+    bottom  : 202px;
+}
+
+img.p_details {
+    position: absolute;
+    top     : 384px;
+    right   : 5px;
+}
+
+
+/* swiper */
+
+.swiper {
+    padding: 100px 100px;
+
+}
+
+.swiper-container {
+    width         : 100%;
+    padding-top   : 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size    : cover;
+    width              : 500px;
+    height             : 700px;
+}
+
+.swiper-slide img {
+    display: block;
+    width  : 100%;
+}
+
+.swiper h1 {
+    text-transform: uppercase;
+    font-family: var(--aller);
+    color: var(--black);
+    margin: auto;
+    text-align: center;
+    font-size: 31px;
+    position: relative;
+}
+
+.swiper h1::after {
+    content: "";
+    width: 175px;
+    height: 6px;
+    background: var(--main);
+    position: absolute;
+    bottom: -12px;
+    left: 529px;
+    border-radius: 24px;
 }

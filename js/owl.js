@@ -12,9 +12,16 @@ $(document).ready(function () {
                 items:3
             },
             1000:{
-                items:4
+                items:5
             }
         }
+    })
+    $('.owl-carousel1').owlCarousel({
+        margin: -10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        items:1
     })
 
 })
