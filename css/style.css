@@ -136,11 +136,12 @@ nav>.top-nav>.menu>ul>li:hover ul {
 }
 
 .left-b {
-    width: 425px;
-    display: flex;
+    width      : 425px;
+    display    : flex;
     align-items: center;
-    margin: 14px 0px;
+    margin     : 14px 0px;
 }
+
 .left-b>p {
     font-family: var(--poppins);
     color      : var(--white);
@@ -222,16 +223,17 @@ nav>.top-nav>.menu>ul>li:hover ul {
     width: 41px;
     left : -74px;
 }
+
 .top-contant>.right-containt>.animeted_r>img.three {
-    top: 361px;
+    top  : 361px;
     width: 44px;
-    left: -188px;
+    left : -188px;
 }
 
 .top-contant>.right-containt>.animeted_r>.rigt1 {
-    top: 317px;
-    right: 240px;
-    width: 160px;
+    top     : 317px;
+    right   : 240px;
+    width   : 160px;
     position: absolute;
 }
 
@@ -240,68 +242,145 @@ nav>.top-nav>.menu>ul>li:hover ul {
 }
 
 .top-contant>.right-containt>.animeted_r>.rigt1 p {
-    color: #707070;
-    top: 56px;
-    right: 133px;
+    color      : #707070;
+    top        : 56px;
+    right      : 133px;
     font-family: var(--poppins);
-    margin-top: -49px;
-    font-size: 11px;
+    margin-top : -49px;
+    font-size  : 11px;
     margin-left: 20px;
 }
 
 /* top animation */
 
 .animation {
-    animation: swing3 2s infinite;
+    animation          : swing3 2s infinite;
     animation-direction: alternate;
 }
 
 @keyframes swing3 {
     0% {
         transform: skewX(20deg);
-      }
-      100% {
+    }
+
+    100% {
         transform: skewX(-20deg);
-      }
-  }
+    }
+}
+
 .animation1 {
-    animation: swing1 6s infinite;
+    animation          : swing1 6s infinite;
     animation-direction: alternate;
 }
 
 @keyframes swing1 {
     0% {
-      transform: translate(0, 0);    
+        transform: translate(0, 0);
     }
+
     100% {
-      transform: translate(20px, 5px);
+        transform: translate(20px, 5px);
     }
-  }
+}
+
 .animation2 {
-    animation: swing 4s infinite;
+    animation          : swing 4s infinite;
     animation-direction: alternate;
 }
 
 @keyframes swing {
     0% {
-      transform: translate(0, 0);    
+        transform: translate(0, 0);
     }
+
     100% {
-      transform: translate(4px, 10px);
+        transform: translate(4px, 10px);
     }
-  }
+}
 
-  .r_pic_m , .rigt2 {
-      animation: slid 7s ease-in-out infinite;
-      animation-direction: alternate;
+.r_pic_m,
+.rigt2 {
+    animation          : slid 7s ease-in-out infinite;
+    animation-direction: alternate;
 
-  }
+}
 
-  @keyframes slid {
+@keyframes slid {
     0% {
-      transform: translate(0, 0);    
+        transform: translate(0, 0);
     }
+
     100% {
-      transform: translate(25px, 0px);
+        transform: translate(25px, 0px);
     }
-  }
+}
+
+/* service */
+.service {
+    padding: 0px 90px;
+    margin: 95px 0;
+}
+.service h1 {
+    font-family: var(--aller);
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+.service>.owl-carousel .item {
+    width : 249px;
+    height: 296px;
+    position: relative;
+}
+.service>.owl-carousel .item .text-con {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-family: var(--poppins);
+    color: var(--white);
+    width: 194px;
+    height: 250px;
+    background-color: var(--black);
+    border-radius: 10px;
+    opacity: 0.6;
+}
+.service>.owl-carousel .item .text-con h3 {
+    top: 177px;
+    position: absolute;
+    left: 7px;
+    font-size: 13px;
+}
+.service>.owl-carousel .item .text-con p {
+    top: 200px;
+    position: absolute;
+    left: 7px;
+    font-size: 13px;
+}
+.service>.owl-carousel .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: -10px !important;
+}
+
+.owl-dot {
+    height: 10px !important;
+    width: 40px !important;
+    border-radius: 25px !important;
+    cursor: pointer !important;
+    outline: none !important;
+    margin: 0 5px !important;
+    border: 2px solid var(--main) !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+    display: none;
+}
+.owl-dot:hover,
+.owl-dot.active{
+    background: var(--main) !important;
+}
